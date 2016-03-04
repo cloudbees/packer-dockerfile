@@ -6,7 +6,7 @@ Docker image with Packer and Packer-Azure plugin installed. Packer executable is
 
 This Docker image is intended to be used with the [Jenkins Docker Pipeline Plugin](https://wiki.jenkins-ci.org/display/JENKINS/CloudBees+Docker+Pipeline+Plugin).
 
-Packer and Packer-Azure are installed in `/packer/bin`.
+Packer and Packer-Azure are installed in `/usr/local/packer/bin`.
 
 # Version 0.0.1
 -   OS: Ubuntu 14.04.4 LTS

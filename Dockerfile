@@ -24,10 +24,8 @@ RUN apt-get update --yes \
 
 # Install Packer
 
-ENV PACKER_BIN_DIR /packer/bin
-ENV PACKER_FILES_DIR /packer/files
-RUN mkdir --parents $PACKER_BIN_DIR \
-  && mkdir --parents $PACKER_FILES_DIR
+ENV PACKER_BIN_DIR /usr/local/packer/bin
+RUN mkdir --parents $PACKER_BIN_DIR 
 
 ENV PACKER_ZIP=https://releases.hashicorp.com/packer/0.9.0/packer_0.9.0_linux_amd64.zip
 RUN curl -sSLo /tmp/packer.zip $PACKER_ZIP && \
